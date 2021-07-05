@@ -11,7 +11,7 @@ class Mentor
  
   # インスタンスが持つメソッド（処理）
   def job
-    puts "#{self.name} です。私は現役のITプロフェッショナルです。"
+    puts "#{self.name}です。私は現役のITプロフェッショナルです。"
   end
 end
 
@@ -24,17 +24,10 @@ kirameki.job
 
 # クラスを継承
 class RailsMentor < Mentor
-
-  @@name = "赤出"
-  
-  # インスタンスを初期化するための、特別なメソッド
-  def initialize(name)
-    self.name = name
-  end
   
   # インスタンスが持つメソッド（処理）
   def job
-    puts "#{self.name} です。私はRubyとRailsでWebアプリケーションを作ります。"
+    puts "#{self.name}です。私はRubyとRailsでWebアプリケーションを作ります。"
   end
 end
 
